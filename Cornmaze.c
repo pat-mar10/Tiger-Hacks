@@ -69,7 +69,7 @@ int movePlayer(char direction, int *playerX, int *playerY, char maze[MAZE_SIZE][
             sprintf(message, "Secret point already collected.");
         }else{
             visibleMaze[*playerX][*playerY] = '1';  
-            sprintf(message, "");
+            message[0] = '\0'; // Clear message
         }
 
         if(*playerX == endX && *playerY == endY){
@@ -107,6 +107,7 @@ int main(){
     char move;
     char message[100] = ""; 
     
+    // Initialize the visibleMaze with '~' and set start and end positions
     for(int i = 0; i < MAZE_SIZE; i++){
         for (int j = 0; j < MAZE_SIZE; j++){
             visibleMaze[i][j] = '~';
