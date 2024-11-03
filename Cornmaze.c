@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 #define MAZE_SIZE 10
 
 char convertLetters(char character){
