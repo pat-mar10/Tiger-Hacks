@@ -2,7 +2,7 @@
 #define MAZE_SIZE 10
 
 char convertLetters(char character){
-    if (character >= 'a' && character <= 'z') {
+    if(character >= 'a' && character <= 'z'){
         return character - 'a' + 'A';
     }
     return character;
