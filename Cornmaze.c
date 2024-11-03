@@ -76,7 +76,7 @@ int movePlayer(char direction, int *playerX, int *playerY, char maze[MAZE_SIZE][
             tickets++; 
             sprintf(message, "Congrats! You completed the maze! Total tickets: %d", tickets);
         }
-    } else {
+    }else{
         sprintf(message, "Cannot move there, it's a wall.");
     }
 
