@@ -102,6 +102,7 @@ int main(){
     int playerX = startX, playerY = startY;
     int tickets = 0;
     int hasCollectedSecretPoint = 0;
+    int gameWon = 0;
     char visibleMaze[MAZE_SIZE][MAZE_SIZE];
     char move;
     char message[100] = ""; 
@@ -116,7 +117,6 @@ int main(){
 
     printf("\033[4m🌽 Welcome to the Corn Maze!🌽\033[0m\nUse U (up), D (down), L (left), and R (right) to navigate.\nFind the secret point to earn bonus tickets!\n");
 
-    int gameWon = 0;
     while(!gameWon){
         displayVisibleMaze(maze, visibleMaze, playerX, playerY, hasCollectedSecretPoint, gameWon);
 
